@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php"
+         backupGlobals="false"
+         colors="true"
+         verbose="true">
+  <php>
+
+    <!-- MySQL Database Testing -->
+    <var name="DB_MYSQL_USER"   value="root"/>
+    <var name="DB_MYSQL_PASSWD" value="123123"/>
+
+    <var name="DB_PGSQL_USER"   value="root"/>
+    <var name="DB_PGSQL_PASSWD" value="123123"/>
+  </php>
+
+  <testsuites>
+    <testsuite name="PHPUnit">
+      <directory suffix="Test.php">tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

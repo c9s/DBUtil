@@ -9,7 +9,7 @@
     <active>yes</active>
   </lead>
   <date>2012-06-18</date>
-  <time>17:30:46</time>
+  <time>17:32:48</time>
   <version>
     <release>0.0.1</release>
     <api>0.0.1</api>
@@ -22,7 +22,8 @@
   <notes>-</notes>
   <contents>
     <dir name="/">
-      <file name="tests/CornelTek/DBUtilTest.php" role="test" md5sum="cce5ab42b64d457b1a3e813b67e385b8"/>
+      <file name="tests/bootstrap.php" role="test" md5sum="a3313d38ca49cdde5166830b31a66d3d"/>
+      <file name="tests/CornelTek/DBUtilTest.php" role="test" md5sum="fd70dade72e52c6e6ec84adfad115474"/>
       <file name="src/CornelTek/DBUtil.php" role="php" md5sum="13c1e0394165e20610e8505612c141e2"/>
     </dir>
   </contents>
@@ -38,6 +39,7 @@
   </dependencies>
   <phprelease>
     <filelist>
+      <install name="tests/bootstrap.php" as="bootstrap.php"/>
       <install name="tests/CornelTek/DBUtilTest.php" as="CornelTek/DBUtilTest.php"/>
       <install name="src/CornelTek/DBUtil.php" as="CornelTek/DBUtil.php"/>
     </filelist>

@@ -5,11 +5,13 @@
   <summary>Database Utils</summary>
   <description>Database Utils</description>
   <lead>
-    <name>Yo-An Lin &lt;cornelius.howl@gmail.com</name>
+    <name>Yo-An Lin</name>
+    <user/>
+    <email>cornelius.howl@gmail.com</email>
     <active>yes</active>
   </lead>
   <date>2012-06-18</date>
-  <time>17:32:48</time>
+  <time>17:33:18</time>
   <version>
     <release>0.0.1</release>
     <api>0.0.1</api>

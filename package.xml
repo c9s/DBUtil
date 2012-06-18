@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0        http://pear.php.net/dtd/tasks-1.0.xsd        http://pear.php.net/dtd/package-2.0        http://pear.php.net/dtd/package-2.0.xsd">
+  <name>DBUtil</name>
+  <channel>pear.corneltek.com</channel>
+  <summary>Database Utils</summary>
+  <description>Database Utils</description>
+  <lead>
+    <name>Yo-An Lin &lt;cornelius.howl@gmail.com</name>
+    <active>yes</active>
+  </lead>
+  <date>2012-06-18</date>
+  <time>17:30:46</time>
+  <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+  </version>
+  <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+  </stability>
+  <license>PHP</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <file name="tests/CornelTek/DBUtilTest.php" role="test" md5sum="cce5ab42b64d457b1a3e813b67e385b8"/>
+      <file name="src/CornelTek/DBUtil.php" role="php" md5sum="13c1e0394165e20610e8505612c141e2"/>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.3</min>
+      </php>
+      <pearinstaller>
+        <min>1.4</min>
+      </pearinstaller>
+    </required>
+  </dependencies>
+  <phprelease>
+    <filelist>
+      <install name="tests/CornelTek/DBUtilTest.php" as="CornelTek/DBUtilTest.php"/>
+      <install name="src/CornelTek/DBUtil.php" as="CornelTek/DBUtil.php"/>
+    </filelist>
+  </phprelease>
+</package>

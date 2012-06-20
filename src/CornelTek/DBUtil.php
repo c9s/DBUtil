@@ -3,6 +3,13 @@ namespace CornelTek;
 use PDO;
 use Exception;
 
+
+/**
+ * Util functions for creating database:
+ *
+ * $util = new DBUtil;
+ *
+ */
 class DBUtil
 {
 
@@ -22,6 +29,17 @@ class DBUtil
         }
     }
 
+
+    /**
+     *
+     * @param string $type driver type
+     * @param array $options 
+     *       database:
+     *       username:
+     *       password:
+     *
+     * @return PDO
+     */
     public function createConnection($type,$options) {
         switch($type) {
         case 'sqlite':

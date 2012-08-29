@@ -11,7 +11,7 @@
     <active>yes</active>
   </lead>
   <date>2012-08-30</date>
-  <time>00:17:48</time>
+  <time>00:21:59</time>
   <version>
     <release>1.0.1</release>
     <api>1.0.1</api>
@@ -26,7 +26,7 @@
     <dir name="/">
       <file name="tests/bootstrap.php" role="test" md5sum="a3313d38ca49cdde5166830b31a66d3d"/>
       <file name="tests/CornelTek/DBUtilTest.php" role="test" md5sum="fd70dade72e52c6e6ec84adfad115474"/>
-      <file name="src/CornelTek/DBUtil.php" role="php" md5sum="b4136af408e05477bb21145a37cb8f11"/>
+      <file name="src/CornelTek/DBUtil.php" role="php" md5sum="cbb7388f1b0b69b451fcc697768cbbd4"/>
     </dir>
   </contents>
   <dependencies>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0        http://pear.php.net/dtd/tasks-1.0.xsd        http://pear.php.net/dtd/package-2.0        http://pear.php.net/dtd/package-2.0.xsd">
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0               http://pear.php.net/dtd/tasks-1.0.xsd               http://pear.php.net/dtd/package-2.0               http://pear.php.net/dtd/package-2.0.xsd">
   <name>DBUtil</name>
   <channel>pear.corneltek.com</channel>
   <summary>Database Utils</summary>
@@ -10,15 +10,15 @@
     <email>cornelius.howl@gmail.com</email>
     <active>yes</active>
   </lead>
-  <date>2012-06-18</date>
-  <time>17:33:56</time>
+  <date>2012-08-30</date>
+  <time>00:17:07</time>
   <version>
-    <release>0.0.1</release>
-    <api>0.0.1</api>
+    <release>1.0.1</release>
+    <api>1.0.1</api>
   </version>
   <stability>
-    <release>alpha</release>
-    <api>alpha</api>
+    <release>stable</release>
+    <api>stable</api>
   </stability>
   <license>PHP</license>
   <notes>-</notes>
@@ -26,7 +26,7 @@
     <dir name="/">
       <file name="tests/bootstrap.php" role="test" md5sum="a3313d38ca49cdde5166830b31a66d3d"/>
       <file name="tests/CornelTek/DBUtilTest.php" role="test" md5sum="fd70dade72e52c6e6ec84adfad115474"/>
-      <file name="src/CornelTek/DBUtil.php" role="php" md5sum="13c1e0394165e20610e8505612c141e2"/>
+      <file name="src/CornelTek/DBUtil.php" role="php" md5sum="b4136af408e05477bb21145a37cb8f11"/>
     </dir>
   </contents>
   <dependencies>

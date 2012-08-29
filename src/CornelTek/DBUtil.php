@@ -88,11 +88,15 @@ class DBUtil
         $pdo = $this->createConnection( 'pgsql' , $options );
 
         $sql = 'CREATE DATABASE ' . $db;
-        if( $owner )
-            $sql .= ' OWNER ' . $owner;
 
-        if( $template )
-            $sql .= ' TEMPLATE ' . $template;
+        if( isset($options['owner']) )
+            $sql .= ' OWNER ' . $options['owner'];
+        if( isset($options['template']) )
+            $sql .= ' TEMPLATE ' . $options['template'];
+        if( isset($options['encoding']) )
+            $sql .= ' ENCODING ' . $options['encoding'];
+        if( isset($options['connection_limit']))
+            $sql .= ' CONNECTION LIMIT ' . $options['connection_limit'];
 
         $result = $pdo->query($sql);
         return $pdo;

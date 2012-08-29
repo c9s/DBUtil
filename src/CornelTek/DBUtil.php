@@ -71,10 +71,12 @@ class DBUtil
         $pdo = $this->createConnection( 'mysql', $options );
 
         $db      = $options['database']; // database name is required
-        $charset = @$options['charset']; // database name is required
+        $charset = @$options['charset'] ?: 'utf8'; // database name is required
         $sql = sprintf('CREATE DATABASE %s ', $db );
-        if( $charset )
-            $sql .= " CHARSET $charset";
+        if( isset( $options['charset'] ) )
+            $sql .= ' CHARSET ' . $options['charset'];
+        else
+            $sql .= ' CHARSET utf8';
         $result = $pdo->query($sql);
         return $pdo;
     }

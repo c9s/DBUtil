@@ -1,15 +1,15 @@
 {
-    "name": "corneltek\/dbutil",
+    "name": "corneltek/dbutil",
     "require": {
         "php": ">=5.3.0"
     },
     "require-dev": {
-        "corneltek\/phpunit-testmore": "dev-master"
+        "corneltek/phpunit-testmore": "dev-master"
     },
     "autoload": {
-        "psr-4": {
-            "CornelTek\\DBUtil\\": "src/CornelTek/"
+        "psr-0": {
+            "CornelTek\\DBUtil": "src"
         }
     },
-    "version": "1.0.4"
+    "version": "1.0.5"
 }

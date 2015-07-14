@@ -1,11 +1,11 @@
 <?php
-use CornelTel\DBUtil;
+use CornelTek\DBUtil;
 
 class DBUtilTest extends PHPUnit_Framework_TestCase
 {
     function test()
     {
-        $creator = new CornelTek\DBUtil;
+        $creator = new DBUtil;
         $conn = $creator->create( 'mysql' , array(
             // connection string
             'username' => 'root',

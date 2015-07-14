@@ -40,9 +40,9 @@ class DBUtil
      *
      * @return PDO
      */
-    public function createConnection($type,$options) {
-        if (!isset(@$options['host'])) {
-            @$options['host'] = 'localhost';
+    public function createConnection($type, array $options = array()) {
+        if (!isset($options['host'])) {
+            $options['host'] = 'localhost';
         }
         switch($type) {
         case 'sqlite':

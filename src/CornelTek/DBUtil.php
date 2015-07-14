@@ -49,7 +49,7 @@ class DBUtil
             return $pdo;
             break;
         case 'mysql':
-            $pdo = new PDO("mysql:", @$options['username'] , @$options['password'] , @$options['attributes'] );
+            $pdo = new PDO("mysql:host=".@$options['host'], @$options['username'] , @$options['password'] , @$options['attributes'] );
             $pdo->setAttribute( PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );
             return $pdo;
             break;

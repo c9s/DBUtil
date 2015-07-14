@@ -7,9 +7,9 @@
         "corneltek\/phpunit-testmore": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Corneltek\\DBUtil": "src"
+        "psr-4": {
+            "CornelTek\\DBUtil\\": "src/CornelTek/"
         }
     },
-    "version": "1.0.3"
+    "version": "1.0.4"
 }

@@ -41,6 +41,9 @@ class DBUtil
      * @return PDO
      */
     public function createConnection($type,$options) {
+        if (!isset(@$options['host'])) {
+            @$options['host'] = 'localhost';
+        }
         switch($type) {
         case 'sqlite':
             $db = isset($options['database']) ? $options['database'] : ':memory:';
@@ -49,12 +52,12 @@ class DBUtil
             return $pdo;
             break;
         case 'mysql':
-            $pdo = new PDO("mysql:", @$options['username'] , @$options['password'] , @$options['attributes'] );
+            $pdo = new PDO("mysql:host=".@$options['host'], @$options['username'] , @$options['password'] , @$options['attributes'] );
             $pdo->setAttribute( PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );
             return $pdo;
             break;
         case 'pgsql':
-            $pdo = new PDO("pgsql:", @$options['username'] , @$options['password'] , @$options['attributes'] );
+            $pdo = new PDO("pgsql:host=".@$options['host'], @$options['username'] , @$options['password'] , @$options['attributes'] );
             $pdo->setAttribute( PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION );
             return $pdo;
             break;
